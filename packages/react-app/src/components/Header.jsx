@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "antd";
+import logo from "../assets/logo.png";
 
 const { Title, Text } = Typography;
 
@@ -11,6 +12,7 @@ export default function Header({ link, title, subTitle, ...props }) {
       <div style={{ display: "flex", flexDirection: "column", flex: 1, alignItems: "start" }}>
         <a href={link} target="_blank" rel="noopener noreferrer">
           <Title level={4} style={{ margin: "0 0.5rem 0 0" }}>
+            <img src={logo} alt="logo" />
             {title}
           </Title>
         </a>
@@ -25,6 +27,6 @@ export default function Header({ link, title, subTitle, ...props }) {
 
 Header.defaultProps = {
   link: "https://github.com/scaffold-eth/scaffold-eth",
-  title: "🏗 Scaffold-Eth",
-  subTitle: "Forkable Ethereum dev stack focused on fast product iteration",
+  title: "AuraSphere",
+  //subTitle: "Forkable Ethereum dev stack focused on fast product iteration",
 };
